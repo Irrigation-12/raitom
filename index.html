@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Irriga-sched</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="instructionBtn">Instructions</button>
+
+  <label for="plantingDate">Planting Date:</label>
+  <input type="date" id="plantingDate" />
+  <div class="output" id="outputText"></div>
+  <p>Note: must be 7 days after planting date</p>
+
+  <label for="cropSelect">Select location:</label>
+  <select id="cropSelect">
+    <option value="">-- Select a Location --</option>
+    <option value="24">Bayongan</option>
+    <option value="26">Capayas</option>
+    <option value="27">Talibon</option>
+    <option value="29">Malinao</option>
+  </select>
+
+  <!-- Inserted block -->
+  <div class="extra-box">
+    <label for="cropType">Select Crop:</label>
+    <select id="cropType">
+      <option value="">-- Choose Crop --</option>
+      <option value="rice">Rice</option>
+      <option value="corn">Corn</option>
+    </select>
+    <button id="cropBtn">Confirm Crop</button>
+  </div>
+
+  <label>Water level (cm): 
+    <input type="number" id="Q" />
+  </label>
+</body>
+</html>
